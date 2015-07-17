@@ -1,0 +1,15 @@
+<div class="container">
+    <h2 ng-bind="question.title"></h2>
+    <ul class="list-group" ng-repeat="ans in answers | orderBy: '-score'">
+      <a href="{{questionLink}}">  
+        <li class="list-group-item">
+          <span class="badge" ng-bind="ans.score + ' vote(s)'"></span>
+          <img src="{{ans.owner.profile_image}}" width="30" height="30" />
+          <p class="text-muted" ng-bind="ans.owner.display_name"></p>
+          
+          <p></p>
+          <span ng-show="ans.is_accepted" class="label label-success">accepted</span>
+        </li>
+      </a>
+    </ul>
+</div>

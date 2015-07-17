@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" ng-app="stackSearch">
+  <head>
+    <title>Search Stack Exchange</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <style>
+      body {
+        padding-top: 60px;
+      }
+    </style>
+  </head>
+  <body >
+    <div class="container">
+      <div class="navbar navbar-fixed-top navbar-inverse">
+        <div class="navbar-inner">
+          <div class="pull-left">
+            <a href="/#/" class="navbar-brand">Search Stack Exchange</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div ng-view=""></div>
+  </body>
+  
+  
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular.js"></script>
+  <script type="text/javascript" src="/vendor/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/vendor/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-route.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.16/angular-resource.js"></script>
+  <script type="text/javascript" src="/vendor/js/dirPagination.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="init.js"></script>
+  <!-- module feature -->
+  <script type="text/javascript" src="/Search/SRCH.js"></script>
+  <script type="text/javascript" src="/Search/controllers/SearchController.js"></script>
+  <script type="text/javascript" src="/Search/services/SearchService.js"></script>
+  <script type="text/javascript" src="/Search/controllers/QuestionsController.js"></script>
+  <script type="text/javascript" src="/Search/controllers/AnswersController.js"></script>
+  <script type="text/javascript" src="/Search/services/AnswersService.js"></script>
+  <script type="text/javascript" src="/Search/services/QuestionsService.js"></script>
+  <script type="text/javascript" src="/Search/services/PropertyService.js"></script>
+</html>

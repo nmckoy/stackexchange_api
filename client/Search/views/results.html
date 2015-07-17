@@ -1,0 +1,15 @@
+<div class="container">
+    <input type="test" placeholder="filter by text" ng-model="searchText">
+    <ul class="list-group" ng-repeat="ques in questions | filter:searchText">
+      <a href="/#/questions/answers/{{ques.question_id}}" ng-click="setLink(ques.link)">
+        <li class="list-group-item">
+          <img ng-show="ques.owner.profile_image" src="{{ques.owner.profile_image}}" width="30" height="30" />
+          <span class="badge" ng-bind="ques.view_count + ' views'"></span>
+          <h4 ng-bind="ques.title"></h4>
+          <h5 ng-bind="'Poster: ' + ques.owner.display_name"></h5>
+          <p class="text-muted" ng-bind="'Tags: ' + ques.tags"></p>
+          <span ng-show="ques.is_answered" class="label label-success">answered</span>
+        </li>
+      </a>
+    </ul>
+</div>

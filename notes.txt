@@ -1,0 +1,6 @@
+First go to this link: https://ide.c9.io/nmckoy/nodeexample
+my IDE for doing this front end test
+
+run 'node server.js' in terminal at the bottom and go to this link in
+your browser:
+https://nodeexample-nmckoy.c9.io/
